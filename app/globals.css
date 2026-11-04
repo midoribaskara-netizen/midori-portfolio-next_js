@@ -1,4 +1,10 @@
 @import "tailwindcss";
+ 
+@theme {
+  --color-encre: #1a1a1a;
+  --color-doux: #6b6b6b;
+  --color-trait: #e4e4e4;
+}
 
 :root {
   --background: #ffffff;
