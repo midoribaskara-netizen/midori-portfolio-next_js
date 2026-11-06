@@ -10,7 +10,7 @@ export type Projet = {
 }
  
 export async function getProjets(): Promise<Projet[]> {
-  const brut = await readFile('data/projets.json', 'utf-8')
+  const brut = await readFile('app/data/projets.json', 'utf-8')
   return JSON.parse(brut)
 }
  
