@@ -1,8 +1,9 @@
 'use client'
  
+import type { Projet } from '@/lib/projets'
 import { useState } from 'react'
  
-export default function FiltreProjets({ projets }) {
+export default function FiltreProjets({ projets }: { projets: Projet[] }) {
   const [tag, setTag] = useState('tous')
  
   const visibles = tag === 'tous'
