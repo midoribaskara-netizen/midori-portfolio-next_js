@@ -5,6 +5,7 @@ import PiedDePage from "@/components/pied-de-page";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Menu from "@/components/menu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,7 @@ export default function RootLayout({
           <Link href="/projets">Projets</Link>
           <Link href="/a-propos">À propos</Link>
         </nav>
-
+        <Menu />
         {children}
       <PiedDePage />
       </body>
