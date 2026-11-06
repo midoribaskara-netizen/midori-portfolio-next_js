@@ -1,0 +1,23 @@
+ [
+    {
+        "slug": "clash-of-cook",
+        "titre": "Clash of Cook",
+        "resum": "un site de presentation de jeu de plateau",
+        "annee": 2025,
+        "tags": ["HTML", "CSS", "Javascript"]
+    },
+    {
+    "slug": "carbonis",
+    "titre": "Carbonis",
+    "resume": "Un site présentant un projet de transformation du CO₂ en pierre.",
+    "annee": 2026,
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "slug": "inventary-dreams",
+    "titre": "Inventary Dreams",
+    "resume": "Un site de collection et d’échange de cartes.",
+    "annee": 2026,
+    "tags": ["PHP", "SQL", "JavaScript"]
+  }
+]

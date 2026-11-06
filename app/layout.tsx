@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 
+import PiedDePage from "@/components/pied-de-page";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -38,6 +39,7 @@ export default function RootLayout({
         </nav>
 
         {children}
+      <PiedDePage />
       </body>
     </html>
   );
