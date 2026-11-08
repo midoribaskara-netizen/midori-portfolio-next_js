@@ -1,9 +1,10 @@
 export type Projet = {
     id: number
-    slug: string,
+    slug: string
     titre: string 
     resume: string
     categorie: string 
+    description: string
     misEnAvant: boolean
 }
 
@@ -14,6 +15,7 @@ export const PROJETS: Projet[] = [
         titre: "Brasserie Noue",
         resume: "Identité visuelle",
         categorie: "Marque",
+        description: " blablabla 1",
         misEnAvant: true 
     },
     {
@@ -22,6 +24,7 @@ export const PROJETS: Projet[] = [
         titre: "Station Orphée",
         resume: "Scene 3D",
         categorie: "3D",
+        description: "blablabla 2",
         misEnAvant: false
     },
     {
@@ -30,6 +33,7 @@ export const PROJETS: Projet[] = [
     titre: "Signal perdu",
     resume: "Jeu d'exploration",
     categorie: "Jeu vidéo",
+    description : "babla 3",
     misEnAvant: true
   },
   {
@@ -38,6 +42,7 @@ export const PROJETS: Projet[] = [
     titre: "Projet quatre",
     resume: "Description du projet",
     categorie: "3D",
+    description : "babla 3",
     misEnAvant: false
   },
   {
@@ -46,6 +51,7 @@ export const PROJETS: Projet[] = [
     titre: "Projet cinq",
     resume: "Description du projet",
     categorie: "Marque",
+    description : "babla 3",
     misEnAvant: false
   },
   {
@@ -54,6 +60,7 @@ export const PROJETS: Projet[] = [
     titre: "Projet six",
     resume: "Description du projet",
     categorie: "Jeu vidéo",
+    description : "babla 3",
     misEnAvant: true
   }
 ]
