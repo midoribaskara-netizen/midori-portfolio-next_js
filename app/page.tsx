@@ -20,7 +20,7 @@ export default function Accueil() {
             titre={projet.titre}
             resume={projet.resume}
             categorie={projet.categorie}
-            href={`/projets/${projet.slug}`}
+            href={projet.slug ? `/projets/${projet.slug}` : undefined}
             image={projet.image}
             annee={projet.annee}
             tags={projet.tags}

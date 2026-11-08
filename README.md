@@ -19,7 +19,7 @@ Midori BASKARA étudiante en 2eme année de Bachelor en Coding digital et innova
 - Bouton j'aime actif
 - Page à propos
 - Page contact
-- Gestion des pages introuvable forcé et naturelle 404
+- Gestion des pages introuvable 404
 - site de carbonis et pokédex disponible via deployement render
 
 ## Pages du site
