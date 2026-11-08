@@ -1,6 +1,4 @@
 
-import Link from "next/link";
-
 import PiedDePage from "@/components/pied-de-page";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -33,14 +31,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav>
-          <Link href="/">Accueil</Link>
-          <Link href="/projets">Projets</Link>
-          <Link href="/a-propos">À propos</Link>
-        </nav>
-        <Menu />
-        {children}
-      <PiedDePage />
+        <div className="mx-auto w-full max-w-3xl px-6">
+          <Menu />
+          <main>{children}</main>
+          <PiedDePage />
+        </div>
       </body>
     </html>
   );

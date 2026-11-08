@@ -1,20 +1,12 @@
-import { readFile } from 'node:fs/promises'
- 
 export type Projet = {
-  slug: string; 
-  titre: string; 
+  id: number
+  titre: string
   resume: string
-  annee: number; 
-  tags: string[]; 
-  image: string
+  categorie: string
 }
- 
-export async function getProjets(): Promise<Projet[]> {
-  const brut = await readFile('app/data/projets.json', 'utf-8')
-  return JSON.parse(brut)
-}
- 
-export async function getProjet(slug: string) {
-  const projets = await getProjets()
-  return projets.find((p) => p.slug === slug)
-}
+
+export const PROJETS: Projet[] = [
+  { id: 1, titre: "Brasserie Noue", resume: "Identité visuelle", categorie: "Marque" },
+  { id: 2, titre: "Station Orphée", resume: "Scène 3D", categorie: "3D" },
+  { id: 3, titre: "Signal perdu", resume: "Jeu d'exploration", categorie: "Jeu vidéo" },
+]

@@ -1,26 +1,24 @@
-import Link from "next/link";
-import { getProjets } from "@/lib/projets";
+import Carte from "@/components/carte";
+import { PROJETS } from "@/app/data/projets";
 
-export default async function ProjetsPage() {
-  const projets = await getProjets();
-
+export default function ProjetsPage() {
   return (
     <main>
       <h1>Mes projets</h1>
 
-      {projets.map((projet) => (
-        <article key={projet.slug}>
-          <h2>
-            <Link href={`/projets/${projet.slug}`}>
-              {projet.titre}
-            </Link>
-          </h2>
+      <div className="grid gap-4 sm:grid-cols-3">
+        {PROJETS.map((projet) => (
+          <div key={projet.id}>
+            {projet.misEnAvant && <span>En vedette</span>}
 
-          <p>{projet.resume}</p>
-          <p>Année : {projet.annee}</p>
-          <p>Technologies : {projet.tags.join(", ")}</p>
-        </article>
-      ))}
+            <Carte
+              titre={projet.titre}
+              resume={projet.resume}
+              categorie={projet.categorie}
+            />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
