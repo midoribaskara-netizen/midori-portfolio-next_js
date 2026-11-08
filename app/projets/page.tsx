@@ -15,6 +15,7 @@ export default function ProjetsPage() {
               titre={projet.titre}
               resume={projet.resume}
               categorie={projet.categorie}
+              href={`/projets/${projet.slug}`}
             />
           </div>
         ))}

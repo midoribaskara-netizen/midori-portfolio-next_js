@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getProjet } from "@/lib/projets";
+import BoutonJaime from "@/components/bouton-jaime";
 
 export default async function ProjetPage({
   params,
@@ -7,16 +8,17 @@ export default async function ProjetPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const projet = await getProjet(slug);
+  const projet = getProjet(slug);
 
   if (!projet) notFound();
 
   return (
     <main>
       <h1>{projet.titre}</h1>
-      <p>{projet.resume}</p>
-      <p>Année : {projet.annee}</p>
-      <p>Technologies : {projet.tags.join(", ")}</p>
+      <p>categorie : {projet.categorie}</p>
+      <p>Description : {projet.resume}</p>
+
+      <BoutonJaime />
     </main>
-  );
+  )
 }
