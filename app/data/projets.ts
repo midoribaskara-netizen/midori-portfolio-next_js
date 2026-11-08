@@ -28,7 +28,7 @@ export const PROJETS: Projet[] = [
     },
     {
         id: 2,
-        slug: "projetaxe",
+        slug: "inconnue",
         titre: "InventaryDreams",
         resume: "Projet d'Axe",
         categorie: "PHP",
