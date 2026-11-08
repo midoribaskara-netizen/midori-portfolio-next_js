@@ -11,7 +11,7 @@ export default async function ProjetPage({
   const { slug } = await params;
   const projet = PROJETS.find((p) => p.slug === slug);
 
-  if (!projet) notFound();
+  if (!projet || projet.id === 5) notFound();
 
     return (
     <article className="py-12">
