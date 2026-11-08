@@ -1,4 +1,4 @@
-const annee = 2026
+const annee = new Date().getFullYear()
  
 export default function PiedDePage() {
   return (

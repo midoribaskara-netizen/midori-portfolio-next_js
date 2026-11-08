@@ -3,9 +3,11 @@ import { PROJETS } from "@/app/data/projets";
 
 export default function ProjetsPage() {
   return (
-    <main>
+    <section>
       <h1>Mes projets</h1>
       <FiltreProjets projets={PROJETS} />
-    </main>
-  )
+
+
+    </section>
+  );
 }

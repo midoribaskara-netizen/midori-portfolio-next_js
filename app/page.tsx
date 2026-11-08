@@ -9,8 +9,8 @@ export default function Accueil() {
   return (
     <>
       <Hero
-        titre="Des images, des jeux, des sites."
-        texte="Atelier Brume est un studio créatif indépendant."
+        titre="Bienvenue dans mon portfolio !"
+        texte="Développeuse web , découvrez mes projets qui se trouvent ci-dessous"
       />
       <Section titre="Nos projets">
         <div className="grid gap-4 sm:grid-cols-3">
@@ -24,7 +24,6 @@ export default function Accueil() {
             image={projet.image}
             annee={projet.annee}
             tags={projet.tags}
-            site={projet.site}
           />
           ))}
         </div>

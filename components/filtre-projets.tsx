@@ -15,13 +15,14 @@ export default function FiltreProjets({ projets }: { projets: Projet[] }) {
     <>
       <div className="mb-4 flex gap-2">
         <button onClick={() => setTag("tous")}>Tous</button>
-        <button onClick={() => setTag('3D')}>3D</button>
+        <button onClick={() => setTag('Créa Design')}>Créa Design</button>
+        <button onClick={() => setTag('Coding digital innovation')}>CDI</button>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">
         {visibles.map((projet) =>(
           <div key={projet.id}>
-            {projet.misEnAvant && <span>En vedette</span>}
+            {projet.misEnAvant && <span>recent</span>}
 
           <Carte
             titre={projet.titre}
@@ -31,7 +32,6 @@ export default function FiltreProjets({ projets }: { projets: Projet[] }) {
             image={projet.image}
             annee={projet.annee}
             tags={projet.tags}
-            site={projet.site}
           />
         </div>
         ))}

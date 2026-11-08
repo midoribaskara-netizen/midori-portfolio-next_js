@@ -25,7 +25,7 @@ export default async function ProjetPage({
             href={projet.site}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-block rounded bg-black px-5 py-2 text-white"
+            className="inline-block rounded bg-black px-5 py-2 text-white"
         >
             Voir le site 
         </a>

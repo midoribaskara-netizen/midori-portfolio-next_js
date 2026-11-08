@@ -24,11 +24,11 @@ export const PROJETS: Projet[] = [
         misEnAvant: true,
         image: "/images/pokédex.png",
         annee: 2026,
-        tags: ["Coding digital innovation", "Groupe", "A2"]
+        tags: ["Coding digital innovation", "Groupe", "A2", "site disponible"]
     },
     {
         id: 2,
-        slug: "inventary-dream",
+        slug: "projet-axe",
         titre: "InventaryDreams",
         resume: "Projet d'Axe",
         categorie: "PHP",
@@ -40,27 +40,28 @@ export const PROJETS: Projet[] = [
     },
     {
     id: 3,
-    slug: "clash-of-cook",
-    titre: "Clash Of Cook",
-    resume: "Epic Digital Game",
-    categorie: "HTML CSS JS",
-    description : "Site conçut pour l'épic digital game pour présenter notre jeu de plateau",
+    slug: "couverture-magasine",
+    titre: "Couverture-magasine",
+    resume: "Projet d'axe Créa",
+    categorie: "PhotoShop",
+    description : "Couverture pour le magasine de notre idole en projet d'axe créa design",
     misEnAvant: false,
-    image: "/images/clash of cook.png",
+    image: "/images/crea.png",
     annee:2026,
-    tags: ["Coding digital innovation", "Groupe", "A1"]
+    tags: ["Créa Design", "Seule", "A1"]
   },
   {
     id: 4,
     slug:"carbonis",
     titre: "Carbonis",
+    site: "https://carbonis.onrender.com",
     resume: "Projet Transversale",
     categorie: "HTML, CSS, JS",
     description : "Site conçut lors de notre projet transverale qui a pour theme l'environnement",
     misEnAvant: true,
     image: "/images/carbonis.png",
     annee:2026,
-    tags: ["Coding digital innovation", "Groupe", "A1"]
+    tags: ["Coding digital innovation", "Groupe", "A1", "site disponible"]
   },
   {
     id: 5,
@@ -87,7 +88,3 @@ export const PROJETS: Projet[] = [
     tags: ["Coding digital innovation", "seule", "A1"]
   }
 ]
-
-export function getProjet(slug: string) {
-    return PROJETS.find((projet) => projet.slug === slug)
-}

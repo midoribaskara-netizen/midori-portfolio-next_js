@@ -2,7 +2,7 @@ import Accordeon from "@/components/accordeon"
 
 export default function AProposPage() {
   return (
-    <main>
+    <section>
       <h1>À propos</h1>
       <p>Étudiant en A2 à l'IIM, spécialisé en développement web.</p>
 
@@ -23,6 +23,6 @@ export default function AProposPage() {
           J'aime le developpement web, le dessin, la musique et les jeux vidéos.
         </Accordeon>
       </section>
-    </main>
+    </section>
   )
 }
