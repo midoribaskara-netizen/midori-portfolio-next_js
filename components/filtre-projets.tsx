@@ -31,6 +31,7 @@ export default function FiltreProjets({ projets }: { projets: Projet[] }) {
             image={projet.image}
             annee={projet.annee}
             tags={projet.tags}
+            site={projet.site}
           />
         </div>
         ))}

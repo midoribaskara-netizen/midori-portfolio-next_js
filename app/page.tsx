@@ -24,6 +24,7 @@ export default function Accueil() {
             image={projet.image}
             annee={projet.annee}
             tags={projet.tags}
+            site={projet.site}
           />
           ))}
         </div>

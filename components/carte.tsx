@@ -11,9 +11,10 @@ type Props = {
   image: string
   annee: number
   tags: string[]
+  site?: string
 }
  
-export default function Carte({ titre, resume, categorie, href, image, annee, tags }: Props) {
+export default function Carte({ titre, resume, categorie, href, image, annee, tags, site }: Props) {
   return (
     <article className="rounded-lg border border-neutral-200 p-5">
         <Image
@@ -31,6 +32,7 @@ export default function Carte({ titre, resume, categorie, href, image, annee, ta
         </h3>
 
         <p className="mt-2 text-sm text-neutral-600">{resume}</p>
+
         <p className="mt-2 text-sm">{annee}</p>
 
         <div className="mt-2 flex flex-wrap gap-2">

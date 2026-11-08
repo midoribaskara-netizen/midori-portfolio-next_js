@@ -1,6 +1,7 @@
 export type Projet = {
     id: number
     slug: string
+    site?: string,
     titre: string 
     resume: string
     categorie: string 
@@ -15,6 +16,7 @@ export const PROJETS: Projet[] = [
     {
         id: 1,
         slug: "pokedex",
+        site: "https://pokedex-pimido-gswa.onrender.com",
         titre: "Pokédex",
         resume: "API Pokedex",
         categorie: "Versionning",
