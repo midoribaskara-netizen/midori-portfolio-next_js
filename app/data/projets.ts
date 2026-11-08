@@ -6,6 +6,9 @@ export type Projet = {
     categorie: string 
     description: string
     misEnAvant: boolean
+    image: string
+    annee: number
+    tags: string[]
 }
 
 export const PROJETS: Projet[] = [
@@ -16,7 +19,10 @@ export const PROJETS: Projet[] = [
         resume: "Identité visuelle",
         categorie: "Marque",
         description: " blablabla 1",
-        misEnAvant: true 
+        misEnAvant: true,
+        image: "/images/A.png",
+        annee: 2026,
+        tags: ["identite visuel", "design"]
     },
     {
         id: 2,
@@ -25,7 +31,10 @@ export const PROJETS: Projet[] = [
         resume: "Scene 3D",
         categorie: "3D",
         description: "blablabla 2",
-        misEnAvant: false
+        misEnAvant: false,
+        image: "/images/B.png",
+        annee: 2026,
+        tags: ["identite visuel", "3D"]
     },
     {
     id: 3,
@@ -34,7 +43,10 @@ export const PROJETS: Projet[] = [
     resume: "Jeu d'exploration",
     categorie: "Jeu vidéo",
     description : "babla 3",
-    misEnAvant: true
+    misEnAvant: true,
+    image: "/images/C.png",
+    annee:2026,
+    tags: ["identite visuel", "Coding"]
   },
   {
     id: 4,
@@ -43,7 +55,10 @@ export const PROJETS: Projet[] = [
     resume: "Description du projet",
     categorie: "3D",
     description : "babla 3",
-    misEnAvant: false
+    misEnAvant: false,
+    image: "/images/D.png",
+    annee:2026,
+    tags: ["idneite visuel", "Market"]
   },
   {
     id: 5,
@@ -52,7 +67,10 @@ export const PROJETS: Projet[] = [
     resume: "Description du projet",
     categorie: "Marque",
     description : "babla 3",
-    misEnAvant: false
+    misEnAvant: false,
+    image: "/images/E.png",
+    annee: 2026,
+    tags: ["identite visuel", "Design"]
   },
   {
     id: 6,
@@ -61,7 +79,10 @@ export const PROJETS: Projet[] = [
     resume: "Description du projet",
     categorie: "Jeu vidéo",
     description : "babla 3",
-    misEnAvant: true
+    misEnAvant: true,
+    image: "/images/F.png",
+    annee: 2026,
+    tags: ["identite visuel", "3D"]
   }
 ]
 

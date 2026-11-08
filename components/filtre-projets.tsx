@@ -1,19 +1,40 @@
 'use client'
  
-import type { Projet } from '@/lib/projets'
 import { useState } from 'react'
+import type { Projet } from '@/app/data/projets'
+import Carte from "@/components/carte"
  
 export default function FiltreProjets({ projets }: { projets: Projet[] }) {
-  const [tag, setTag] = useState('tous')
+  const [tag, setTag] = useState("tous")
  
-  const visibles = tag === 'tous'
+  const visibles = tag === "tous"
     ? projets
     : projets.filter((p) => p.tags.includes(tag))
  
   return (
-    <div>
-      <button onClick={() => setTag('3d')}>3D</button>
-      <ul>{visibles.map((p) => <li key={p.slug}>{p.titre}</li>)}</ul>
-    </div>
+    <>
+      <div className="mb-4 flex gap-2">
+        <button onClick={() => setTag("tous")}>Tous</button>
+        <button onClick={() => setTag('3D')}>3D</button>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-3">
+        {visibles.map((projet) =>(
+          <div key={projet.id}>
+            {projet.misEnAvant && <span>En vedette</span>}
+
+          <Carte
+            titre={projet.titre}
+            resume={projet.resume}
+            categorie={projet.categorie}
+            href={`/projets/${projet.slug}`}
+            image={projet.image}
+            annee={projet.annee}
+            tags={projet.tags}
+          />
+        </div>
+        ))}
+      </div>
+    </>
   )
 }

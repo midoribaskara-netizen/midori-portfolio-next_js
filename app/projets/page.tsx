@@ -1,25 +1,11 @@
-import Carte from "@/components/carte";
+import FiltreProjets from "@/components/filtre-projets";
 import { PROJETS } from "@/app/data/projets";
 
 export default function ProjetsPage() {
   return (
     <main>
       <h1>Mes projets</h1>
-
-      <div className="grid gap-4 sm:grid-cols-3">
-        {PROJETS.map((projet) => (
-          <div key={projet.id}>
-            {projet.misEnAvant && <span>En vedette</span>}
-
-            <Carte
-              titre={projet.titre}
-              resume={projet.resume}
-              categorie={projet.categorie}
-              href={`/projets/${projet.slug}`}
-            />
-          </div>
-        ))}
-      </div>
+      <FiltreProjets projets={PROJETS} />
     </main>
-  );
+  )
 }
